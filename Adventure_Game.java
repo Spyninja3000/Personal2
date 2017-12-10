@@ -58,15 +58,15 @@ public class Adventure_Game {
 			
 		    int energy = 0;
 
-		    int 	op_energy = 0;
+		    int op_energy = 0;
 
-		    int 	over_shield = 0;
+		    int over_shield = 0;
 
-		    int 	shield_durability = 7;
+		    int shield_durability = 7;
 
-		    	int sword_durability = 9;
+		    int sword_durability = 9;
 
-		    int 	potion_durability = 12;
+		    int potion_durability = 12;
 		    
 		    while(true) {
 		    		String opponent_move = null;
@@ -96,7 +96,7 @@ public class Adventure_Game {
 		    		if(shield_durability == 0) {
 		    			print("Your shield broke! You've used it too much! Because your shield is broken, your opponent");
 		    			print("skips ahead and thrusts his sword into your face. GAME OVER");
-		            break;
+		            		break;
 		    		}
 		    		
 	            if(sword_durability == 0) {
@@ -106,10 +106,11 @@ public class Adventure_Game {
 	            }
 	            
 	            if(potion_durability == 0) {
-	            		print("You have run out of potion. Seeing this, your opponent");
-	            		print("skips ahead and thrusts his sword into your face. GAME OVER");
+	            	print("You have run out of potion. Seeing this, your opponent");
+	            	print("skips ahead and thrusts his sword into your face. GAME OVER");
 	                break;
 	            }
+			    
 	            String move = null;
 	            if(over_shield != 5) {
 	            		if(energy == 0) {
